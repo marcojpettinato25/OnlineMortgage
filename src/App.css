@@ -56,8 +56,8 @@ body {
   color: #00bcd4;
 }
 
-.center{
-  text-align: center
+.center {
+  text-align: center;
 }
 
 .hero-section {
@@ -67,10 +67,10 @@ body {
   justify-content: center;
   background-color: #013b1080;
   color: #fff;
-  height: 60vh;
+  height: auto; /* Adjust for better responsiveness */
+  padding: 20px;
   text-align: center;
   animation: fadeIn 2s ease-out;
-  padding: 20px;
 }
 
 .hero-section h1 {
@@ -87,8 +87,8 @@ body {
 .hero-form {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Adds space between the input fields */
-  width: 60%; /* Ensures the form does not take up the full width */
+  gap: 10px; /* Adds space between the input fields */
+  width: 70%; /* Adjusted for better spacing */
   max-width: 720px; /* Limit the form's max width */
   margin-bottom: 20px;
 }
@@ -101,13 +101,14 @@ body {
 
 .hero-form input {
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   font-size: 1rem;
   border: 2px solid #fff;
   border-radius: 5px;
   background-color: #fff;
   color: #333;
-  width: 400px;
+  width: 100%; /* Allow inputs to stretch to container width */
+  max-width: 400px; /* Limit max width */
   transition: border-color 0.3s ease;
 }
 
@@ -191,7 +192,11 @@ body {
   }
 
   .hero-form {
-    width: 90%; /* Make the form even narrower on mobile */
+    width: 80%; /* More responsive form on mobile */
+  }
+
+  .hero-form input {
+    padding: 12px; /* Larger padding for easier interaction */
   }
 
   .section-content h2 {
